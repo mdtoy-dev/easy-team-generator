@@ -31,7 +31,7 @@
 
   ![Test image](./assets/test.png)
 
-  ![Video demo](./assets/demo.mp4)
+  https://github.com/mdtoy-dev/easy-team-generator/assets/63880442/bb633e58-5567-44be-bb45-80961d7d1bbd
 
   ![Result image](./assets/html.png)
 
@@ -41,3 +41,6 @@
   Check my [GitHub Profile](https://github.com/mdtoy-dev) or get in touch if you have any questions by sending me an [email](mailto:berk.toy1@gmail.com).
 
   
+
+
+
