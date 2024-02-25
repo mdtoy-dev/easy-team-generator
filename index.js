@@ -49,7 +49,7 @@ const addTeamMember = () => {
             message: "Add a team member:"
         }
     ]).then(response => {
-        if (response) {
+        if (response === true) {
           inquirer
             .prompt([
               {
@@ -144,4 +144,18 @@ const internInfo = () => {
       addTeamMember()
     })
 }
+
 managerInfo()
+
+const createHTML = () => {
+    const htmlContent = render(team)
+
+    if (!fs.existsSync(OUTPUT_DIR)){
+        fs.mkdirSync(OUTPUT_DIR)
+    }
+
+    fs.writeFile(outputPath, htmlContent, (err) => {
+        if (err) {console.error(err)} return
+    })
+    console.log("Your HTML is created");
+}
