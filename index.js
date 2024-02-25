@@ -49,7 +49,7 @@ const addTeamMember = () => {
             message: "Add a team member:"
         }
     ]).then(response => {
-        if (response === true) {
+        if (response.check) {
           inquirer
             .prompt([
               {
