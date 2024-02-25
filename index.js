@@ -35,7 +35,7 @@ const managerInfo = () => {
         message: "Enter Manager's office number:"
       }
     ]).then(answer => {
-        const manager = new Manager(answer.name, anwer.id, answer.email, answer.officeNumber)
+        const manager = new Manager(answer.name, answer.id, answer.email, answer.officeNumber)
         team.push(manager)
         addTeamMember()
     })
@@ -100,7 +100,7 @@ const engineerInfo = () => {
     .then((answer) => {
       const engineer = new Engineer(
         answer.name,
-        anwer.id,
+        answer.id,
         answer.email,
         answer.github
       )
@@ -136,7 +136,7 @@ const internInfo = () => {
     .then((answer) => {
       const intern = new Intern(
         answer.name,
-        anwer.id,
+        answer.id,
         answer.email,
         answer.school
       )
@@ -144,3 +144,4 @@ const internInfo = () => {
       addTeamMember()
     })
 }
+managerInfo()
